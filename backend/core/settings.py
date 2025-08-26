@@ -10,7 +10,7 @@ class Settings(BaseSettings):
     app_name: str = "ClassifyApp"
     environment: str = "development"  # development | production | staging
     debug: bool = True
-    model_config = SettingsConfigDict(env_file=os.path.join(os.path.dirname(__file__), "../../../.env"), env_file_encoding='utf-8', extra='allow')
+    model_config = SettingsConfigDict(env_file=os.path.join(os.path.dirname(__file__), "../../.env"), env_file_encoding='utf-8', extra='allow')
 
     # Supabase
     db_url: str = Field(..., alias="database_url")

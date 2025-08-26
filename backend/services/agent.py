@@ -71,6 +71,7 @@ class AgentService:
     
     You MUST use both tools to answer the question. 
     Never provide a final answer without invoking a tool.
+    Note: It would be ideal if you could pass the ‘abstract’ as an input to ‘retrieval_vector_db’.
     
     Always reason step by step in the following format:
     
