@@ -3,7 +3,7 @@ import requests
 import json
 from typing import Optional
 
-# Configuración de la página
+# Page setup
 st.set_page_config(
     page_title="Scientific Paper Classifier",
     page_icon="🔬",
@@ -11,11 +11,11 @@ st.set_page_config(
     initial_sidebar_state="expanded"
 )
 
-# Configuración de la API
-API_BASE_URL = "http://localhost:8000"  # Cambia por tu URL de FastAPI
+# API Configuration
+API_BASE_URL = "http://localhost:8000"
 CLASSIFY_ENDPOINT = f"{API_BASE_URL}/classify/"
 
-# Estilos CSS personalizados
+# Custom CSS styles
 st.markdown("""
 <style>
     .main-header {
