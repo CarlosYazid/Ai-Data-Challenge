@@ -247,28 +247,25 @@ Health check endpoint.
 ```
 scientific-paper-classifier/
 ├── backend/
-│   ├── src/
-│   │   ├── core/
-│   │   │   ├── __init__.py
-│   │   │   └── settings.py
-│   │   ├── db/
-│   │   │   ├── __init__.py
-│   │   │   └── main.py
-│   │   ├── models/
-│   │   │   ├── __init__.py
-│   │   │   └── agent.py
-│   │   ├── routes/
-│   │   │   ├── __init__.py
-│   │   │   └── agent.py
-│   │   ├── services/
-│   │   │   ├── __init__.py
-│   │   │   └── agent.py
+│   ├── core/
+│   │   ├── __init__.py
+│   │   └── settings.py
+│   ├── db/
+│   │   ├── __init__.py
 │   │   └── main.py
-│   └── requirements.txt
+│   ├── models/
+│   │   ├── __init__.py
+│   │   └── agent.py
+│   ├── routes/
+│   │   ├── __init__.py
+│   │   └── agent.py
+│   ├── services/
+│   │   ├── __init__.py
+│   │   └── agent.py
+│   └── main.py
 ├── frontend/
-│   ├── app.py
-│   ├── requirements.txt
-│   └── run.sh
+│   └── main.py
+├── requirements.txt
 ├── .gitignore
 ├── LICENSE
 └── README.md
@@ -329,14 +326,6 @@ For support and questions:
 - **Issues**: GitHub Issues
 - **Discussions**: GitHub Discussions
 - **Email**: [contact@carlospadilla.co]
-
-## 🙏 Acknowledgments
-
-- **OpenAI** for providing the language models
-- **LangChain** for the agent framework
-- **Supabase** for the vector database
-- **Streamlit** for the user interface framework
-- **FastAPI** for the backend framework
 
 ---
 
